@@ -5,21 +5,21 @@
 class Kalco < Formula
   desc "Kubernetes Analysis & Lifecycle Control - Extract, validate, analyze, and version control your entire cluster"
   homepage "https://github.com/graz-dev/kalco"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/graz-dev/kalco/releases/download/v0.1.5/kalco_Darwin_x86_64.tar.gz"
-      sha256 "7720921e26d0696cb0f01fb5086fc3f59aa45b00c0188680b9bc4911e8b83a37"
+      url "https://github.com/graz-dev/kalco/releases/download/v0.1.6/kalco_Darwin_x86_64.tar.gz"
+      sha256 "0bc492955e870c596507a97ba7d4073d18e6764aeef54063dfc19a8ad5669d8a"
 
       def install
         bin.install "kalco"
       end
     end
     on_arm do
-      url "https://github.com/graz-dev/kalco/releases/download/v0.1.5/kalco_Darwin_arm64.tar.gz"
-      sha256 "84cdc6ae277185535fe903f96e882d8ea16638fd830758abf0e7d92d56bff61a"
+      url "https://github.com/graz-dev/kalco/releases/download/v0.1.6/kalco_Darwin_arm64.tar.gz"
+      sha256 "63dc3883c3867a2a91661baa973902ac160740e710a0be597874a963139d0200"
 
       def install
         bin.install "kalco"
@@ -30,8 +30,8 @@ class Kalco < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/graz-dev/kalco/releases/download/v0.1.5/kalco_Linux_x86_64.tar.gz"
-        sha256 "d7a51dbd011a2f34fc088e2a8b0d7d07f601e10fd4c0cb72a6d7a093d5343510"
+        url "https://github.com/graz-dev/kalco/releases/download/v0.1.6/kalco_Linux_x86_64.tar.gz"
+        sha256 "593ef5f8c8fb5c0527dd73f114fe2d0beed280d94ec7e0680b28562d5c217db6"
 
         def install
           bin.install "kalco"
@@ -40,8 +40,8 @@ class Kalco < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/graz-dev/kalco/releases/download/v0.1.5/kalco_Linux_arm64.tar.gz"
-        sha256 "4f5c0e3a405d30691cbac01469116f89cde8a2658db1c1dc4300abddf0894187"
+        url "https://github.com/graz-dev/kalco/releases/download/v0.1.6/kalco_Linux_arm64.tar.gz"
+        sha256 "a657659d894a8d3227361e6669b9ae65dba1ff9805a1366ea4c6e4ed155a339a"
 
         def install
           bin.install "kalco"
